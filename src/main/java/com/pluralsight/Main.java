@@ -124,7 +124,7 @@ public class Main {
 
 
             String query = """
-                SELECT ContactName, CompanyName, City, Country, Phone from customers
+                SELECT ContactName, CompanyName, City, Country, Phone from customers ORDER by Country
                 """;
 
             statement = connection.prepareStatement(query);
